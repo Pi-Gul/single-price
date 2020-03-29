@@ -11,12 +11,13 @@ html {
 }
 
 body {
-  margin: 0px auto;
   width: 375px;
+  margin: 0px auto;
 }
 
 main {
   display: flex;
+  width: 100%;
   flex-direction: column;
 }
 
@@ -26,12 +27,11 @@ ul {
 
 section {
   position: relative;
-  width: 375px;
+  width: 100%;
   padding: 30px 25px;
 }
 
 p {
-  font-size: 1em;
   line-height: 1.7;
   color: hsl(218, 22%, 65%);
 }
@@ -48,9 +48,9 @@ button {
   font-size: 0.9em;
   font-weight: 700;
   letter-spacing: 1px;
-  padding: 15px 120px;
+  padding: 5% 35%;
   border-radius: 7px;
-  margin-top: 30px;
+  margin-top: 15%;
   margin-left: auto;
   margin-right: auto;
   border: 0px;
@@ -122,4 +122,22 @@ button {
 
 .attribution a {
   color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 1440px) {
+  html {
+    font-size: 26px;
+  }
+  body {
+    width: 1000px;
+  }
+  section {
+    padding: 50px 45px;
+  }
+  .double-section {
+    flex-direction: row;
+  }
+  .section-1 {
+    width: 100%;
+  }
 }
